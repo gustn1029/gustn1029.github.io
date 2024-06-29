@@ -101,7 +101,7 @@ body {
   height: 34px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -8px) rotate(-35deg);
+  transform: translate(-50%, -8px) rotate(-31deg);
   animation: mouse-center-move 3s ease-in-out infinite;
   background-color: white;
 }
@@ -222,7 +222,7 @@ body {
 @keyframes mouse-center-move {
   0%,
   15% {
-  transform: translate(-50%, -8px) rotate(-35deg);
+  transform: translate(-50%, -8px) rotate(-31deg);
   }
   7%,
   22% {
@@ -231,6 +231,6 @@ body {
   }
   50%,
   100% {
-      transform: translate(-50%, -8px) rotate(-35deg);
+      transform: translate(-50%, -8px) rotate(-31deg);
   }
 }
