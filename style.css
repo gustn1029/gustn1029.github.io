@@ -28,8 +28,8 @@ body {
 .head {
   position: relative;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-color: #334155;
   border-radius: 100%;
   border: var(--common-border);
@@ -41,8 +41,8 @@ body {
 .eyes span {
   position: relative;
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   background-color: white;
   border-radius: 100%;
 }
@@ -54,31 +54,30 @@ body {
 }
 .eyes span::after {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   background-color: #222;
   position: absolute;
   top: auto;
   border-radius: 100%;
-  animation: close-eyes 7s ease-in-out infinite;
+  animation: closeEyes 7s ease-in-out infinite;
 }
 
 .eyes span:first-child::after {
-  right: 25px;
-  bottom: 15px;
+  right: 15px;
+  bottom: 10px;
 }
 
 .eyes span:last-child::after {
-  left: 25px;
-  bottom: 15px;
+  left: 15px;
+  bottom: 10px;
 }
 .nose {
   position: relative;
   z-index: 1;
-  width: 45px;
-  height: 45px;
-  margin-top: -36px;
-  /* transform: translate(0, 10px); */
+  width: 30px;
+  height: 30px;
+  margin-top: -21px;
   border: var(--common-border);
   background-color: #555;
   box-sizing: border-box;
@@ -96,8 +95,8 @@ body {
   display: block;
   z-index: 0;
   content: "";
-  width: 66px;
-  height: 45px;
+  width: 44px;
+  height: 34px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -8px) rotate(-35deg);
@@ -108,8 +107,8 @@ body {
   position: absolute;
   gap: 3px;
   z-index: 0;
-  width: 150px;
-  height: 90px;
+  width: 100px;
+  height: 60px;
   background-color: white;
   top: -15px;
   border-radius: 100%;
@@ -148,7 +147,7 @@ body {
   transform: translate(-20px, 100%) rotate(-15deg);
 }
 .mouse .mouse-two span {
-  transform: translate(130px, 100%) rotate(15deg);
+  transform: translate(80px, 100%) rotate(15deg);
 }
 
 .mouse .mouse-one span:nth-child(1)::after {
@@ -206,30 +205,30 @@ body {
   }
 }
 
-@keyframes mouse-center-move {
-  0%,
-  15% {
-    
-    transform: translate(-50%, -8px) rotate(-35deg);
-  }
-  7%,
-  22% {
-    transform: translate(-50%, -8px) rotate(-20deg);
-  }
-  50%,
-  100% {
-    transform: translate(-50%, -8px) rotate(-35deg);
-  }
-}
-
-@keyframes close-eyes {
+@keyframes closeEyes {
   0%,
   10%,
   100% {
-    height: 48px;
+    height: 32px;
   }
 
   5% {
     height: 1px;
+  }
+}
+
+@keyframes mouse-center-move {
+  0%,
+  15% {
+  transform: translate(-50%, -8px) rotate(-35deg);
+  }
+  7%,
+  22% {
+    
+  transform: translate(-50%, -8px) rotate(-20deg);
+  }
+  50%,
+  100% {
+      transform: translate(-50%, -8px) rotate(-35deg);
   }
 }
